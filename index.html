@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container"></div>
+        <div id="menu">
+            <div class="menu-item" onclick="switchMode('')">
+                <button id="set-select" class="button active">
+                    <span class="iconify medium-icon" data-icon="mdi-cursor-default"></span>
+                </button>
+            </div>
+            <div class="menu-item" onclick="switchMode('coordinate')">
+                <button id="set-add-coordinate" class="button">
+                    <span class="iconify medium-icon" data-icon="mdi-crosshairs-gps"></span>
+                </button>
+            </div>
+            <div class="menu-item" onclick="switchMode('start-line')">
+                <button id="set-add-line" class="button">
+                    <span class="iconify medium-icon" data-icon="mdi-vector-line"></span>
+                </button>
+            </div>
+            <div class="menu-item" onclick="switchMode('start-node')">
+                <button id="set-add-node" class="button">
+                    <span class="iconify medium-icon" data-icon="mdi-vector-rectangle"></span>
+                </button>
+            </div>
+            <div class="menu-item" onclick="exportToTikz()">
+                <button id="set-add-node" class="button">
+                    <span class="iconify medium-icon" data-icon="mdi-file-export-outline"></span>
+                </button>
+            </div>
+        </div>
+        <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="lib/input-handler.js"></script>
+        <script type="text/javascript" src="lib/single-select.js"></script>
+        <script type="text/javascript" src="lib/multi-select.js"></script>
+        <script type="text/javascript" src="lib/export-tikz.js"></script>
+        <script type="text/javascript" src="lib/objects/coordinate.js"></script>
+        <script type="text/javascript" src="lib/objects/line.js"></script>
+        <script type="text/javascript" src="lib/objects/node.js"></script>
+
+        <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    </body>
+</html>

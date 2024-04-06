@@ -1,0 +1,38 @@
+body {
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: auto auto;
+    overflow: hidden;
+}
+
+#menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu > div {
+    margin: 0px 2px;
+}
+
+#menu > div > .button {
+    transition: 100ms linear all;
+}
+
+#menu > div:hover > .button {
+    color: firebrick;
+}
+
+.medium-icon {
+    font-size: 25px;
+}
+
+.button.active {
+    color: firebrick;
+}
